@@ -194,3 +194,51 @@ export function DayframeCover() {
     <rect width="420" height="260" fill={texture} opacity=".58" />
   </svg>;
 }
+
+export function EliteCraftCover() {
+  const id = `ewc-cover-${useId().replace(/[^a-zA-Z0-9_-]/g, "")}`;
+  const cx = 250;
+  const cy = 130;
+  return <svg aria-hidden="true" focusable="false" viewBox="0 0 420 260" preserveAspectRatio="xMidYMid slice" style={canvas}>
+    <defs>
+      <radialGradient id={`${id}-glow`} cx="0.6" cy="0.5" r="0.6">
+        <stop offset="0" stopColor="#E3FF3C" stopOpacity="0.18" />
+        <stop offset="1" stopColor="#0B0B0B" stopOpacity="0" />
+      </radialGradient>
+    </defs>
+    <rect width="420" height="260" fill="#0B0B0B" />
+    <rect width="420" height="260" fill={`url(#${id}-glow)`} />
+    <g fill="none">
+      {[28, 48, 70, 94, 120, 148, 178].map((r, i) => (
+        <circle
+          key={r}
+          cx={cx}
+          cy={cy}
+          r={r}
+          stroke={i === 1 || i === 3 ? "#E3FF3C" : "#F4F4EF"}
+          strokeOpacity={i === 1 ? 0.85 : i === 3 ? 0.45 : Math.max(0.08, 0.28 - i * 0.03)}
+          strokeWidth={i === 1 ? 1.5 : 1}
+          strokeDasharray={i === 2 ? "5 7" : undefined}
+        />
+      ))}
+      <line x1="48" y1={cy} x2="392" y2={cy} stroke="#F4F4EF" strokeOpacity="0.14" strokeWidth="1" />
+      <line x1={cx} y1="16" x2={cx} y2="244" stroke="#F4F4EF" strokeOpacity="0.14" strokeWidth="1" />
+      <polygon
+        points="250,82 292,106 292,154 250,178 208,154 208,106"
+        fill="#E3FF3C"
+        fillOpacity="0.1"
+        stroke="#E3FF3C"
+        strokeWidth="1.6"
+      />
+      <circle cx={cx} cy={cy} r="4" fill="#E3FF3C" />
+    </g>
+    <g fill="none" stroke="#8C8C86" strokeOpacity="0.4" strokeWidth="1">
+      <rect x="26" y="42" width="126" height="176" rx="4" fill="#151515" fillOpacity="0.92" stroke="#F4F4EF" strokeOpacity="0.2" />
+      <line x1="40" y1="68" x2="112" y2="68" stroke="#E3FF3C" strokeOpacity="0.9" strokeWidth="2" />
+      <line x1="40" y1="92" x2="136" y2="92" />
+      <line x1="40" y1="112" x2="124" y2="112" />
+      <line x1="40" y1="132" x2="130" y2="132" />
+      <rect x="40" y="162" width="64" height="22" rx="2" fill="#E3FF3C" stroke="none" />
+    </g>
+  </svg>;
+}

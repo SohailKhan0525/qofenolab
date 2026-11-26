@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SailCover, DayframeCover } from "@/illustrations/LabCovers";
+import { SailCover, DayframeCover, EliteCraftCover } from "@/illustrations/LabCovers";
 import QofenoOptic from "@/illustrations/QofenoOptic";
 import { siteOrigin } from "@/lib/urls";
 import styles from "./directory.module.css";
@@ -28,6 +28,11 @@ const labs = [
     slug: "qofeno", name: "Qofeno", category: "AI preview",
     description: "Explore three scripted conversations about reading closely, shaping a draft, and making a decision.",
     cover: <QofenoOptic />,
+  },
+  {
+    slug: "elite-web-craft", name: "Qofeno Orbit", category: "Agent runtime",
+    description: "Inspect scoped skill packs, deterministic pre-commit gates, and a live runtime sizer for coding agents.",
+    cover: <EliteCraftCover />,
   },
 ];
 

@@ -7,6 +7,7 @@ Qofeno Lab is a collection of interactive browser projects. The home page is a d
 | Under Sail | Orbit a Three.js pirate ship on a sunset ocean. Its standalone HTML also runs offline. | [Open Under Sail](https://qofeno.vercel.app/labs/sailboat/) |
 | Dayframe | Plan a photo shoot around natural light. | [Open Dayframe](https://qofeno.vercel.app/labs/skill/) |
 | Qofeno | Explore three scripted conversations for an AI assistant in development and follow its launch feed. | [Open Qofeno](https://qofeno.vercel.app/labs/qofeno/) |
+| Qofeno Orbit | Inspect scoped skill packs, deterministic pre-commit gates, and a live runtime sizer for coding agents. | [Open Qofeno Orbit](https://qofeno.vercel.app/labs/elite-web-craft/) |
 
 ## Develop locally
 
@@ -29,4 +30,4 @@ Open `http://localhost:3000/`. For a production check, run `npm run lint`, `npm 
 
 The Next.js App Router serves the Qofeno page. Its code-drawn lens, sample conversations, and room comparison use Young Serif, Public Sans, and scoped GSAP animation. The examples run in the browser. Add release entries to `public/labs/qofeno/updates.xml` to publish them to the launch feed.
 
-The Under Sail prompt, Dayframe skill, and Qofeno brief are kept with the individual labs. [Under Sail prompt](public/labs/sailboat/prompt.txt) · [Dayframe skill](public/labs/skill/skill.txt) · [Qofeno prompt](public/labs/qofeno/prompt.txt) · [Qofeno skill](public/labs/qofeno/skill.txt)
+The Under Sail prompt, Dayframe skill, and Qofeno brief are kept with the individual labs. [Under Sail prompt](public/labs/sailboat/prompt.txt) · [Dayframe skill](public/labs/skill/skill.txt) · [Qofeno prompt](public/labs/qofeno/prompt.txt) · [Qofeno skill](public/labs/qofeno/skill.txt) · [Qofeno Orbit prompt](public/labs/elite-web-craft/prompt.txt) · [Qofeno Orbit skill](public/labs/elite-web-craft/skill.txt)

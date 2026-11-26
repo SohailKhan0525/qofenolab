@@ -1,0 +1,10 @@
+Skill: elite-web-craft
+Source: local workspace skill bundle (SKILL.md, references/01..09, scripts/roll.mjs, scripts/lint.mjs, assets/starter)
+
+Applied rules and direction roll (seed 698798776):
+- Palette register: Signal Duotone (#0B0B0B bg, #151515 surface, #F4F4EF ink, #8C8C86 muted, #E3FF3C accent)
+- Type pairing: Gloock / Schibsted Grotesk / Space Mono via next/font/google
+- Hero archetype: Live product UI (C) over full-bleed orbital contour scene (3)
+- Motion verb: orbit (GSAP 3.15: SplitText, ScrollTrigger, Flip, DrawSVGPlugin, MorphSVGPlugin)
+- Code-only visuals: OrbitalContours SVG, CalibrationCore MorphSVG, Bento schematics, and one lazy OGL dot-matrix shader (OrbitalDotField) with CSS poster fallback
+- Gates: tsc --noEmit, next build --webpack, node scripts/lint.mjs src --strict (0 errors, 0 warnings)
