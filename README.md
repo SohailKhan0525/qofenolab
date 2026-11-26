@@ -1,25 +1,32 @@
 # Qofeno Lab
 
-Each experiment has its own folder on `main` and opens directly at its own URL. **Under Sail** is a standalone Three.js scene. Download its HTML file to run it offline. [Under Sail source](docs/labs/sailboat/index.html) · [Original prompt](docs/labs/sailboat/prompt.txt)
+Qofeno Lab is a collection of interactive browser projects. The home page is a directory of the three labs. Each card opens the corresponding project at its own address. [Open the directory](https://qofeno.vercel.app/)
 
-**Dayframe** is a natural-light planner for photographers, built with the Taste-Inspired Web Design skill. [Open Dayframe](https://sohailkhan0525.github.io/qofenolab/labs/skill/) · [Design skill](docs/labs/skill/skill.txt)
+| Project | What to try | URL |
+| --- | --- | --- |
+| Under Sail | Orbit a Three.js pirate ship on a sunset ocean. Its standalone HTML also runs offline. | [Open Under Sail](https://qofeno.vercel.app/labs/sailboat/) |
+| Dayframe | Plan a photo shoot around natural light. | [Open Dayframe](https://qofeno.vercel.app/labs/skill/) |
+| Qofeno | Explore three scripted conversations for an AI assistant in development and follow its launch feed. | [Open Qofeno](https://qofeno.vercel.app/labs/qofeno/) |
 
-**Qofeno** is a coming-soon conversational AI concept. Try its three scripted examples and follow the launch feed. [Open Qofeno](https://sohailkhan0525.github.io/qofenolab/labs/qofeno/) · [Source and build instructions](labs-src/qofeno/) · [Original prompt](docs/labs/qofeno/prompt.txt)
+## Develop locally
 
-## Add a lab
+Install Node.js 20.9 or later. Run these commands from the repository root.
 
-1. Choose a short URL slug such as `another` and create `docs/labs/another/` on `main`.
-2. Put the finished page in `index.html` and save the original request beside it as `prompt.txt`. For a lab based solely on a named skill, record its name in `skill.txt`.
-3. Push to `main`. With Pages enabled, GitHub publishes the new folder at `labs/another/` under the site’s base URL. Editing an existing folder updates the same URL.
+```sh
+npm ci
+npm run dev
+```
 
-`main` is the only branch. Keep the publishing root `docs/` and the `docs/labs/` directory free of index files so visitors enter through a lab URL. The repository README stays outside the published site.
+Open `http://localhost:3000/`. For a production check, run `npm run lint`, `npm run build`, and `npm start`.
 
-## GitHub Pages
+## Add or update a lab
 
-In **Settings → Pages → Build and deployment**, choose **Deploy from a branch**, select **main** and **/docs**, and save. GitHub then publishes changes from `main` automatically. [Pages settings](https://github.com/SohailKhan0525/qofenolab/settings/pages)
+1. Choose a short slug. For a standalone lab, put its `index.html` and assets in `public/labs/<slug>/`. For a Next.js lab, create `src/app/labs/<slug>/page.tsx` and put its public files in `public/labs/<slug>/`.
+2. Keep the original request in `public/labs/<slug>/prompt.txt`, or record the supplied skill in `skill.txt`. Add a card to the directory in `src/app/page.tsx`.
+3. Push to `main`, the repository’s single branch. Vercel builds the Next.js project from the repository root and publishes the lab at `https://qofeno.vercel.app/labs/<slug>/`. Editing an existing slug updates that same URL.
 
-| Lab folder | Published URL with Pages enabled |
-| --- | --- |
-| `docs/labs/sailboat/` | `https://sohailkhan0525.github.io/qofenolab/labs/sailboat/` |
-| `docs/labs/skill/` | `https://sohailkhan0525.github.io/qofenolab/labs/skill/` |
-| `docs/labs/another/` (future example) | `https://sohailkhan0525.github.io/qofenolab/labs/another/` |
+## Qofeno AI
+
+The Next.js App Router serves the Qofeno page. Its code-drawn lens, sample conversations, and room comparison use Young Serif, Public Sans, and scoped GSAP animation. The examples run in the browser. Add release entries to `public/labs/qofeno/updates.xml` to publish them to the launch feed.
+
+The Under Sail prompt, Dayframe skill, and Qofeno brief are kept with the individual labs. [Under Sail prompt](public/labs/sailboat/prompt.txt) · [Dayframe skill](public/labs/skill/skill.txt) · [Qofeno prompt](public/labs/qofeno/prompt.txt) · [Qofeno skill](public/labs/qofeno/skill.txt)

@@ -2,10 +2,9 @@
 
 import { useRef, useState } from 'react';
 import { gsap, useGSAP } from '@/lib/gsap';
+import { feedUrl, labPath } from '@/lib/urls';
 import styles from './QofenoLaunch.module.css';
 
-const sitePath = '/qofenolab/labs/qofeno/';
-const feedURL = `https://sohailkhan0525.github.io${sitePath}updates.xml`;
 const questions = [
   {
     question: 'Is this a live model?',
@@ -87,7 +86,7 @@ export default function QofenoLaunch() {
 
   async function copyFeed() {
     try {
-      await navigator.clipboard.writeText(feedURL);
+      await navigator.clipboard.writeText(feedUrl);
       setCopyState('copied');
     } catch {
       setCopyState('manual');
@@ -119,7 +118,7 @@ export default function QofenoLaunch() {
             <h2 id="qofeno-updates" data-launch-enter>Follow the launch.</h2>
             <p data-launch-enter>Add Qofeno to your feed reader for release notes and the public launch announcement.</p>
             <div className={styles.feedActions} data-launch-enter>
-              <a className={styles.importLink} href={`${sitePath}qofeno.opml`} download="qofeno.opml">
+              <a className={styles.importLink} href={`${labPath}qofeno.opml`} download="qofeno.opml">
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 20 20" fill="none"><path d="M3 3a14 14 0 0 1 14 14M3 8a9 9 0 0 1 9 9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/><circle cx="4" cy="16" r="1.65" fill="currentColor"/></svg>
                 Import feed
               </a>
@@ -128,7 +127,7 @@ export default function QofenoLaunch() {
             <span className={styles.visuallyHidden} role="status">{copyState === 'copied' ? 'Launch feed link copied.' : ''}</span>
             {copyState === 'manual' && (
               <label className={styles.manual}>Select and copy this feed address
-                <input ref={feedInput} type="url" value={feedURL} readOnly />
+                <input ref={feedInput} type="url" value={feedUrl} readOnly />
               </label>
             )}
           </div>

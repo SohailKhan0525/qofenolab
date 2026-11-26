@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
+import { feedUrl, labUrl } from "@/lib/urls";
 import SmallNav from "@/components/SmallNav";
 import QofenoHero, { Arrow } from "@/components/QofenoHero";
 import QofenoOptic from "@/illustrations/QofenoOptic";
 import QofenoConversation from "@/components/QofenoConversation";
 import QofenoApproach from "@/components/QofenoApproach";
 import QofenoLaunch from "@/components/QofenoLaunch";
+
+const title = "Qofeno — A conversational AI in development";
+const description = "Meet Qofeno, an upcoming conversational AI assistant. Explore three scripted examples for reading, writing and reasoning, and follow the public launch notes.";
+export const metadata: Metadata = {
+  title, description,
+  alternates: { canonical: labUrl, types: { "application/atom+xml": feedUrl } },
+  openGraph: { type: "website", title, description, url: labUrl, siteName: "Qofeno" },
+};
 
 function Aperture() {
   return <svg viewBox="0 0 36 36" aria-hidden="true" focusable="false" fill="none">

@@ -5,14 +5,14 @@
   <id>https://sohailkhan0525.github.io/qofenolab/labs/qofeno/updates.xml</id>
   <updated>2026-11-26T13:00:00Z</updated>
   <author><name>Qofeno</name></author>
-  <link rel="self" type="application/atom+xml" href="https://sohailkhan0525.github.io/qofenolab/labs/qofeno/updates.xml"/>
-  <link rel="alternate" type="text/html" href="https://sohailkhan0525.github.io/qofenolab/labs/qofeno/"/>
+  <link rel="self" type="application/atom+xml" href="https://qofeno.vercel.app/labs/qofeno/updates.xml"/>
+  <link rel="alternate" type="text/html" href="https://qofeno.vercel.app/labs/qofeno/"/>
   <entry>
     <title>Explore the first Qofeno preview</title>
     <id>https://sohailkhan0525.github.io/qofenolab/labs/qofeno/#preview-2026-11-26</id>
     <updated>2026-11-26T13:00:00Z</updated>
     <published>2026-11-26T13:00:00Z</published>
-    <link rel="alternate" type="text/html" href="https://sohailkhan0525.github.io/qofenolab/labs/qofeno/#preview"/>
+    <link rel="alternate" type="text/html" href="https://qofeno.vercel.app/labs/qofeno/#preview"/>
     <summary>The Qofeno preview is open. Try three written examples of reading, writing and reasoning while the conversational assistant is in development.</summary>
   </entry>
 </feed>

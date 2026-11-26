@@ -8,9 +8,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
+    "start": "next start",
     "check": "tsc --noEmit",
-    "lint": "node scripts/lint.mjs src --strict",
-    "export:pages": "npm run build && node scripts/publish.mjs"
+    "lint": "node scripts/lint.mjs src --strict"
   },
   "dependencies": {
     "next": "16.4.6",
