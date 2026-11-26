@@ -1,0 +1,6 @@
+:HL["/qofenolab/labs/qofeno/_next/static/media/035c7fe496b803e3-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/qofenolab/labs/qofeno/_next/static/media/65297b851b44a3c9-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/qofenolab/labs/qofeno/_next/static/css/a70cd2f3cc7f8612.css","style"]
+:HL["/qofenolab/labs/qofeno/_next/static/css/dd0ee4b3245bb6ee.css","style"]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"4ee150893d659f4eb8846f42","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

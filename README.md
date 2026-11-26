@@ -4,6 +4,8 @@ Each experiment has its own folder on `main` and opens directly at its own URL. 
 
 **Dayframe** is a natural-light planner for photographers, built with the Taste-Inspired Web Design skill. [Open Dayframe](https://sohailkhan0525.github.io/qofenolab/labs/skill/) · [Design skill](docs/labs/skill/skill.txt)
 
+**Qofeno** is a coming-soon conversational AI concept. Try its three scripted examples and follow the launch feed. [Open Qofeno](https://sohailkhan0525.github.io/qofenolab/labs/qofeno/) · [Source and build instructions](labs-src/qofeno/) · [Original prompt](docs/labs/qofeno/prompt.txt)
+
 ## Add a lab
 
 1. Choose a short URL slug such as `another` and create `docs/labs/another/` on `main`.

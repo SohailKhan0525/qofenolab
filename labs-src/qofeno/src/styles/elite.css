@@ -1,0 +1,24 @@
+/* Base layer adapted from the supplied shell. Content stays visible during hydration. */
+:root {
+  --ink: #271e1a;
+  --accent: #a23c28;
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.skip {
+  position: fixed; left: 12px; top: 12px; z-index: 1000;
+  display: grid; place-items: center; min-height: 44px; padding: 0 18px;
+  background: #f4f0e6; color: #271e1a; font-family: var(--font-body), system-ui, sans-serif;
+  transform: translateY(calc(-100% - 20px));
+}
+.skip:focus { transform: none; }
+.route-ink-rule {
+  position: fixed; inset: 0 0 auto; z-index: 100; height: 2px;
+  background: var(--accent); transform: scaleX(0); transform-origin: left center;
+  opacity: 0; pointer-events: none;
+}
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+@media (prefers-reduced-motion: reduce) {
+  .route-ink-rule { display:none; }
+}
