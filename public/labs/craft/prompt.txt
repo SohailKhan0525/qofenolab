@@ -1,0 +1,2 @@
+Request: unzip the supplied elite-web-craft skill, read every file, understand the qofenolab repo, then add a new URL with a Next.js landing page for it. Push to main; Vercel publishes automatically.
+New URL: /labs/craft/

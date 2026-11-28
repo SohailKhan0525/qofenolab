@@ -1,6 +1,6 @@
 # Qofeno Lab
 
-Qofeno Lab is a collection of interactive browser projects. The home page is a directory of the three labs. Each card opens the corresponding project at its own address. [Open the directory](https://qofeno.vercel.app/)
+Qofeno Lab is a collection of interactive browser projects. The home page is a directory of the labs. Each card opens the corresponding project at its own address. [Open the directory](https://qofeno.vercel.app/)
 
 | Project | What to try | URL |
 | --- | --- | --- |
@@ -8,6 +8,7 @@ Qofeno Lab is a collection of interactive browser projects. The home page is a d
 | Dayframe | Plan a photo shoot around natural light. | [Open Dayframe](https://qofeno.vercel.app/labs/skill/) |
 | Qofeno | Explore three scripted conversations for an AI assistant in development and follow its launch feed. | [Open Qofeno](https://qofeno.vercel.app/labs/qofeno/) |
 | Qofeno Orbit | Inspect scoped skill packs, deterministic pre-commit gates, and a live runtime sizer for coding agents. | [Open Qofeno Orbit](https://qofeno.vercel.app/labs/elite-web-craft/) |
+| Elite Web Craft | Roll a palette, type pairing and hero from a seed, and see how the skill's lint gate holds a Next.js build. | [Open Elite Web Craft](https://qofeno.vercel.app/labs/craft/) |
 
 ## Develop locally
 
@@ -30,4 +31,4 @@ Open `http://localhost:3000/`. For a production check, run `npm run lint`, `npm 
 
 The Next.js App Router serves the Qofeno page. Its code-drawn lens, sample conversations, and room comparison use Young Serif, Public Sans, and scoped GSAP animation. The examples run in the browser. Add release entries to `public/labs/qofeno/updates.xml` to publish them to the launch feed.
 
-The Under Sail prompt, Dayframe skill, and Qofeno brief are kept with the individual labs. [Under Sail prompt](public/labs/sailboat/prompt.txt) · [Dayframe skill](public/labs/skill/skill.txt) · [Qofeno prompt](public/labs/qofeno/prompt.txt) · [Qofeno skill](public/labs/qofeno/skill.txt) · [Qofeno Orbit prompt](public/labs/elite-web-craft/prompt.txt) · [Qofeno Orbit skill](public/labs/elite-web-craft/skill.txt)
+The Under Sail prompt, Dayframe skill, and Qofeno brief are kept with the individual labs. [Under Sail prompt](public/labs/sailboat/prompt.txt) · [Dayframe skill](public/labs/skill/skill.txt) · [Qofeno prompt](public/labs/qofeno/prompt.txt) · [Qofeno skill](public/labs/qofeno/skill.txt) · [Qofeno Orbit prompt](public/labs/elite-web-craft/prompt.txt) · [Qofeno Orbit skill](public/labs/elite-web-craft/skill.txt) · [Elite Web Craft prompt](public/labs/craft/prompt.txt) · [Elite Web Craft skill](public/labs/craft/skill.txt)

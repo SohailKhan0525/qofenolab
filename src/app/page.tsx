@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SailCover, DayframeCover, EliteCraftCover } from "@/illustrations/LabCovers";
+import { SailCover, DayframeCover, EliteCraftCover, CraftCover } from "@/illustrations/LabCovers";
 import QofenoOptic from "@/illustrations/QofenoOptic";
 import { siteOrigin } from "@/lib/urls";
 import styles from "./directory.module.css";
@@ -33,6 +33,11 @@ const labs = [
     slug: "elite-web-craft", name: "Qofeno Orbit", category: "Agent runtime",
     description: "Inspect scoped skill packs, deterministic pre-commit gates, and a live runtime sizer for coding agents.",
     cover: <EliteCraftCover />,
+  },
+  {
+    slug: "craft", name: "Elite Web Craft", category: "Agent skill",
+    description: "Deal a palette, type pairing and hero for a Next.js build, then see how the lint gate holds it.",
+    cover: <CraftCover />,
   },
 ];
 

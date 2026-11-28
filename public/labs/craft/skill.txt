@@ -1,0 +1,11 @@
+Skill: elite-web-craft (SKILL.md saved beside this file)
+
+Applied rules and direction roll (seed 2711, reproducible with: node scripts/roll.mjs 2711):
+- Palette register: Moss and Bone (#EDEBE0 bg, #E2DFD0 surface, #1F2A1F ink, #667060 muted, #4C6B3C accent, #D8A47F spark)
+- Type pairing: Young Serif / Public Sans (self-hosted by the root layout)
+- Hero archetype: H interactive tool (the seed roller)
+- Layout skeleton: 4 asymmetric 12-col with offsets
+- Signature technique: Flip layout morph
+- Motion verb: assemble
+- Illustration treatment: ordered dither (OGL shader with a CSS dot poster beneath, plus a Bayer 8x8 SVG per method step)
+- Code-only visuals; no images; gate: node scripts/lint.mjs src --strict

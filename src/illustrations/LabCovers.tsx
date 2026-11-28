@@ -242,3 +242,25 @@ export function EliteCraftCover() {
     </g>
   </svg>;
 }
+
+const bayer8 = (n: number): number[][] => {
+  if (n === 1) return [[0]];
+  const m = bayer8(n / 2);
+  return [
+    ...m.map(r => [...r.map(v => 4 * v), ...r.map(v => 4 * v + 2)]),
+    ...m.map(r => [...r.map(v => 4 * v + 3), ...r.map(v => 4 * v + 1)]),
+  ];
+};
+
+export function CraftCover() {
+  const m = bayer8(8);
+  const cells = [];
+  for (let y = 0; y < 26; y++) for (let x = 0; x < 42; x++) {
+    const lum = Math.max(0, Math.min(1, .52 + .3 * Math.sin(x / 5.5) + .18 * Math.sin(x / 2.3 - y / 6) - (y - 13) / 26));
+    if (m[y % 8][x % 8] / 64 < lum) cells.push(<rect key={`${x}-${y}`} x={x * 10} y={y * 10} width="7" height="7" />);
+  }
+  return <svg aria-hidden="true" focusable="false" viewBox="0 0 420 260" preserveAspectRatio="xMidYMid slice" style={canvas}>
+    <rect width="420" height="260" fill="#1f2a1f" />
+    <g fill="#d8a47f">{cells}</g>
+  </svg>;
+}
